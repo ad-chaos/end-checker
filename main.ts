@@ -43,7 +43,7 @@ class CheckBoxPlugin implements PluginValue {
    }
 
    update(update: ViewUpdate) {
-      if (update.docChanged || update.viewportChanged || update.selectionSet)
+      if (update.viewportChanged || update.selectionSet)
          this.decorations = CheckBoxPlugin.checkboxes(update.view);
    }
 
